@@ -1,0 +1,49 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.color-picker
+{
+    display: flex;
+    flex-direction: column;
+}
+.color-picker_image
+{
+    display: flex;
+}
+.color-picker_image canvas
+{
+    margin-right: 20px;
+}
+img::selection {
+    background: transparent;
+}
+.color-picker_circle
+{
+    position: absolute;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.color-picker_circle.active 
+{
+    border: 1px solid white;
+}
+.color-picker_out
+{
+    width: 20px;
+    height: 20px;
+    background: red;
+}
+
